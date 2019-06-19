@@ -1,0 +1,15 @@
+{
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.format.insertSpaceAfterTypeAssertion": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "npm.packageManager": "npm",
+  "npm.runInTerminal": false,
+  "typescript.check.npmIsInstalled": true,
+  "php.validate.enable": false,
+  "debug.node.autoAttach": "on",
+  "workbench.colorTheme": "Monokai Dimmed",
+  "terminal.explorerKind": "integrated",
+  "terminal.integrated.inheritEnv": true,
+  "terminal.integrated.shell.linux": "/usr/bin/bash"
+}

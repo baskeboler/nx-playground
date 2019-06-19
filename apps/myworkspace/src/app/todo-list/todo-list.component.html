@@ -1,0 +1,19 @@
+<div class="todo-list">
+  <h2>Todos</h2>
+
+  <ul>
+    <li *ngFor="let t of todos">
+      {{ t.title }}
+    </li>
+  </ul>
+
+  <div>{{ newTodo }}</div>
+  <input
+    id="tinput"
+    #tinput
+    [value]="newTodo"
+    type="text"
+    (keyup)="keyPress(tinput.value)"
+  />
+  <button id="add-todo" (click)="addTodo()">Add new todo</button>
+</div>
