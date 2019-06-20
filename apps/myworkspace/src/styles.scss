@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --cardColor: rgb(87, 0, 80);
+  --cardBackground: rgb(255, 209, 209);
+  --buttonColor: rgb(224, 186, 186);
+  --buttonBackground: rgb(143, 71, 71);
+  --navColor: rgb(255, 148, 148);
+  --navBackground: #fff;
+  --footerColor: #fff;
+  --footerBackground: #fff;
+  --footerAlignment: left;
+  --background: #aaa;
+  --onBackground: rgb(100, 100, 200);
+}
+body {
+  background-color: var(--background);
+  color: var(--onBackground);
+
+  button {
+    font: inherit;
+    border: inherit;
+    color: var(--buttonColor);
+    background-color: var(--buttonBackground);
+  }
+}

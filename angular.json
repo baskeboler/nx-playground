@@ -118,6 +118,37 @@
           }
         }
       }
+    },
+    "zen-theme-manager": {
+      "projectType": "library",
+      "root": "libs/zen-theme-manager",
+      "sourceRoot": "libs/zen-theme-manager/src",
+      "prefix": "zen",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/zen-theme-manager/tsconfig.lib.json",
+              "libs/zen-theme-manager/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/zen-theme-manager/jest.config.js",
+            "tsConfig": "libs/zen-theme-manager/tsconfig.spec.json",
+            "setupFile": "libs/zen-theme-manager/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

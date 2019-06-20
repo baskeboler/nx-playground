@@ -1,0 +1,17 @@
+@import '../../theme';
+@import '../../functions';
+
+.card {
+  padding: 0.5em;
+  background-color: var(--cardBackground);
+  color: var(--cardColor);
+  border: 1px var(--cardColor) solid;
+  .card-title {
+    font-size: 1.05em;
+    font-weight: bold;
+    font-family: fantasy;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    border-bottom: 0.1em dotted var(--cardColor);
+  }
+}

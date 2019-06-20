@@ -15,7 +15,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@myworkspace/zen-theme-manager": ["libs/zen-theme-manager/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
